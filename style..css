@@ -1,0 +1,254 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: hwb(0 100% 0%);
+}
+
+.welcome-section {
+  background-image: url("poto/gunung.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+/* HEADER SECTIONYA */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* RESPONSIVE NAVIGATION MENU */
+#menu-toggle {
+  display: none;
+  background-color: #4a7c59;
+  color: white;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+/* Menu Toggle hanya muncul di layar kecil */
+@media (max-width: 768px) {
+  #menu-toggle {
+    display: block;
+  }
+  
+  nav ul {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  nav ul.active {
+    display: flex;
+  }
+}
+
+/* WELCOME SECTIONYA */
+.welcome-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  text-align: center;
+}
+.welcome-section h2 {
+  font-size: 28px;
+  color: #4a7c59;
+}
+.welcome-section p {
+  color: #556b2f;
+}
+.welcome-section img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+}
+.welcome-section button {
+  background-color: #4a7c59;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* LAYANAN KAMI */
+#services {
+  background-color: #6a9f58;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+#services h2 {
+  font-size: 24px;
+}
+#services p {
+  color: #333;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* TABLE */
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  width: 80%;
+}
+table, th, td {
+  border: 1px solid #4a7c59;
+}
+th, td {
+  padding: 15px;
+  text-align: center;
+  color: #333;
+  background-color: #e3e8db;
+}
+
+/* KONTAINER PRODUKNYA */
+.product-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+/* KONTAINER SETIAP PRODUKNYA */
+.product-card {
+  background-color: #e3e8db;
+  border: 1px solid #a9a9a9;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+}
+
+/* GAMBAR PRODUKNYA */
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* HEADING SETIAP PRODUKNYA */
+.product-card h3 {
+  font-size: 18px;
+  color: #333;
+  margin: 15px 0 10px;
+}
+.product-card p {
+  color: #666;
+  font-size: 14px;
+}
+
+/* KONTAK KAMI */
+#contact {
+  background-color: #f0f5f0;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* JUDUL KONTAK */
+#contact h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* KOTAKAN KONTAK */
+#contact form {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* LABELNYA */
+#contact form label {
+  display: block;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+/* TEXT AREA */
+#contact form input[type="text"],
+#contact form input[type="email"],
+#contact form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #333;
+}
+
+/* TOMBOL */
+#contact form button[type="submit"] {
+  background-color: #4a7c59;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+/* TOMBOL HOVER */
+#contact form button[type="submit"]:hover {
+  background-color: #3a6045;
+}
+
+/* FOOTER */
+footer {
+  background-color: #3a6045;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+
+
